@@ -1,10 +1,10 @@
-Data-Structures
+#Data-Structures
 Data Structure Projects that are implemented in python 3.6. Below is a list of of projects and how to run them
 
-Bubble Sort
+#Bubble Sort
 Open up bubble Sort folder and open the bd_bubblesort file and run module or migrate and run it through a terminal
 
-DFS_Graph_Queue
+#DFS_Graph_Queue
 This folder contains the following files 
 DFS
 Graph
@@ -74,14 +74,15 @@ tree_class
 This folder contains the files for diplaying the use of encrypting a phrase, "run_encrypt.py", you will run the program in idle
 or a terminal, enter follow the instructions, after entering the phrase you can then coppy paste the output and de-encrypt it using 
 the same key value as you used to encrypt it.
-ex: >>>enter a phrase: hello
->>> enter a key value between 1 and 9: 4
->>> enter 1 to encode or enter 2 to decode: 1
+ex: 
+enter a phrase: hello
+enter a key value between 1 and 9: 4
+enter 1 to encode or enter 2 to decode: 1
 lipps
 ^this is the encrypted code now re-run program and enter this in for phrase
->>> enter a phrase: lipps
->>> enter a key value between 1 and 9: 4 (must be same as when encrypted)
->>> enter 1 to encode, enter 2 to decode: 2
+enter a phrase: lipps
+enter a key value between 1 and 9: 4 (must be same as when encrypted)
+enter 1 to encode, enter 2 to decode: 2
 hello
 ^decodes back to original message
 

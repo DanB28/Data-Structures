@@ -1,0 +1,163 @@
+Test one:
+	In test one I put in the entire alphabet to be coded in a tree and then pass it a phrase 
+That uses every letter at least once. The reason for this test is, I want to see if the tree can 
+handle bigger data sets such as the characters, and having it grab every letter at least once 
+means that every letter is in a correct spot and there are no collisions meaning that each letter 
+is its own node or leaf. The output should be “ the quick brown fox jumped over the lazy dog” with 
+out spaces, it is in fact that, and comes out expected with the correct amount of characters, bits 
+and compression ratio.
+
+input: 
+
+A 00000
+B 00001
+C 00010
+D 00011
+E 00100
+F 00110
+G 00111
+H 01000
+I 01001
+J 01011
+K 01110
+L 01111
+M 10000
+N 10001
+O 10010
+P 10011
+Q 10100
+R 10101
+S 10111
+T 11000
+U 11001
+V 11010
+W 11011
+X 11101
+Y 11110
+Z 11111
+
+11000010000010010100110010100100010011100000110101100101101110001001101001011101010111100110000100110010000011100101101000100001001010111000010000010001111000001111111110000111001000111
+
+Output:
+Success: ['T', 'H', 'E', 'Q', 'U', 'I', 'C', 'K', 'B', 'R', 'O', 'W', 'N', 'F', 'O', 'X', 'J', 'U', 'M', 'P', 'E', 'D', 'O', 'V', 'E', 'E', 'R', 'T', 'H', 'E', 'L', 'A', 'Z', 'Y', 'D', 'O', 'G']
+Number of bits: 185
+Number of characters: 37
+Compression Ratio: 62.5 %
+
+Test Two:
+	This program does not have to accept numbers in with letters and is made so it does not do that, 
+it checks for if it is alpha and puts the “character” in a leaf at the end of the sequence. Since it is 
+not a letter when the if alpha is called it is not going to put anything in and the decode message will 
+be invalid. It should throw an Error: cannot decode message, and it does as expected. the reason for this
+test is to make sure it does not get numbers to be in the decoded message
+
+input:
+1 000
+2 001
+a 010
+b 011
+c 100
+3 101
+
+010011100000001101
+
+output:
+Error: Cannot Decode Message
+
+Test three: 
+	Test three checks to see if a capital letter has an effect on the program or not. 
+I do not believe it will have an effect considering it will have its own encoding sequence 
+different then the same lower case number. So ie: “A 000” and “a 001” are different and 
+technically two different characters. After testing this it is correct that it does not 
+matter as long as it has a different sequence. And prints out with the success message 
+and correct bits, characters  and compression ratio. Reason to check and make sure capital letters
+do not have an effect on the program as long as they have their own code.
+
+input:
+a 000
+b 001
+c 010
+d 011
+A 100
+B 101
+C 110
+D 111
+
+100000101001110010111011
+
+output:
+
+Success: ['A', 'a', 'B', 'b', 'C', 'c', 'D', 'd']
+Number of bits: 24
+Number of characters: 8
+Compression Ratio: 37.5 %
+
+Test Four:
+	This test checks for spaces in the encoding characters. This program does not 
+need the use of spaces so like in test two, it is not alpha and when it checks it to 
+receive it, it will not append anything and throw an Error: message cant be decoded message. 
+It does in fact do this and this test works as expected. reason for this test is to make sure
+it does not read in spaces for the decoded message.
+
+input:
+  000
+a 001
+b 011
+c 1
+
+0010000110001
+
+output:
+Error: Cannot Decode Message
+ 
+Test five:
+	This test checks for symbols, like the space, it will not append either and return 
+with the same error message that the message cannot be decoded. It does do this and works correctly. 
+The reason for this test is to make sure that the program, like numbers, does not read in symbols for 
+the decoded message output.
+
+input:
+_ 000
+! 001
+@ 010
+. 1
+
+0010000100001
+
+output:
+Error: Cannot Decode Message
+
+ 
+Test six:
+	This test checks to see if letters with different size bits for letters will work 
+accordingly like in the valid test two, also makes sure it can use duplicate letters. 
+Since the encoding scheme is all different even for different number of encoding bits, 
+it does work, the message prints out with success: Budweiser, and the correct number of bits, 
+characters, and compression ratio. The reason for this is to check and make sure that it can still
+read in characters with different size bit encoding schemes, and still produce a decoded message. also 
+it checks and makes sure that multiple letters can be used in the same sentance, or decoded message.
+
+input:
+B 0000
+D 0001
+U 0010
+E 11
+I 0100
+W 100
+R 0111
+S 101
+
+000000100001100110100101110111
+
+output:
+Success: ['B', 'U', 'D', 'W', 'E', 'I', 'S', 'E', 'R']
+Number of bits: 30
+Number of characters: 9
+Compression Ratio: 41.66666666666667 %
+
+
+Note:
+	The second invalid test that was given to us has the message code not valid, which is correct, i do not have additiional 
+test cases for that type of test, as it does work correctly. 
+
+   

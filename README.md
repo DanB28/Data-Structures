@@ -5,53 +5,54 @@ Data Structure Projects that are implemented in python 3.6. Below is a list of o
 Open up bubble Sort folder and open the bd_bubblesort file and run module or migrate and run it through a terminal
 
 <h1>DFS_Graph_Queue</h1>
-<p>This folder contains the following files</p>
-<li>
-<ul>DFS</ul>
-<ul>Graph</ul>
-<ul>Main</ul>
-<ul>pythonds</ul>
-<ul>Queue</ul>
-<ul>Vetex</ul>
-</li>
+<p>This folder contains the following files</br>
+DFS</br>
+Graph</br>
+Main</br>
+pythonds</br>
+Queue</br>
+Vetex</br>
+</p>
 
-<p>to run, open and run main.py, then you will get the following options</p>
-<li>
-<ul>Main Menu </ul>
-<ul>1	Input a graph from the keyboard </ul>
-<ul>2	Input a graph from a file </ul>
-<ul>3	View graph </ul>
-<ul>4	Single-source shortest path </ul>
-<ul>5	All-pairs shortest path </ul>
-<ul>6	Topological sort </ul>
-<ul>7	Exit the program </ul>
-</li>
+<p>to run, open and run main.py, then you will get the following options</br>
 
-<p>when entering a frome keyboard make sure its in the following format</p>
-<li>
-<ul>Enter your selection[1-7]: 1 </ul>
+Main Menu </br>
+1	Input a graph from the keyboard </br>
+2	Input a graph from a file </br>
+3	View graph </br>
+4	Single-source shortest path </br>
+5	All-pairs shortest path </br>
+6	Topological sort </br>
+7	Exit the program </br>
+</p>
+
+
+
+<p>when entering a frome keyboard make sure its in the following format</br>
+
+Enter your selection[1-7]: 1 </br>
  
-<ul>Enter an edge or return to quit: A-B: 80 </ul>
-<ul>Enter an edge or return to quit: B-C: 79 </ul>
-<ul>Enter an edge or return to quit: B-E: 153 </ul>
-<ul>Enter an edge or return to quit: C-D: 78 </ul>
-<ul>Enter an edge or return to quit: C-F: 74 </ul>
-<ul>Enter an edge or return to quit: D-E: 98 </ul>
-<ul>Enter an edge or return to quit: D-F: 89 </ul>
-<ul>Enter an edge or return to quit: F-G: 67 </ul>
-<ul>Enter an edge or return to quit: D-F: 89 </ul>
-<ul>Enter an edge or return to quit:  </ul>
-<ul>Graph created successfully </ul>
-</li>
+Enter an edge or return to quit: A-B: 80 </br>
+Enter an edge or return to quit: B-C: 79 </br>
+Enter an edge or return to quit: B-E: 153 </br>
+Enter an edge or return to quit: C-D: 78 </br>
+Enter an edge or return to quit: C-F: 74 </br>
+Enter an edge or return to quit: D-E: 98 </br>
+Enter an edge or return to quit: D-F: 89 </br>
+Enter an edge or return to quit: F-G: 67 </br>
+Enter an edge or return to quit: D-F: 89 </br>
+Enter an edge or return to quit:  </br>
+Graph created successfully </br>
+</p>
 
-<p>After the graph is imported or created, you then can select options for the graph</p>
-<li>
-<ul>3) view</ul>
-<ul>4) single source shortest path </ul>
-<ul>5) all-pairs shortest path</ul>
-<ul>6) topological sort</ul>
-<ul>or press 7 to quit</ul>
-</li>
+<p>After the graph is imported or created, you then can select options for the graph</br>
+3) view</br>
+4) single source shortest path </br>
+5) all-pairs shortest path</br>
+6) topological sort</br>
+or press 7 to quit</br>
+</p>
+
 <h1>Hash Table</h1>
 <p>This foler contains three files that will implement a hash table. 
 to run select either hashtableNums.py or hashTableNames.py and run in idle or go to the directory in a terminal and run

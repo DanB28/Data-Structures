@@ -1,4 +1,4 @@
-#Data-Structures
+<h1>Data-Structures</h1>
 Data Structure Projects that are implemented in python 3.6. Below is a list of of projects and how to run them
 
 #Bubble Sort
